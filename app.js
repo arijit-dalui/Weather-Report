@@ -14,7 +14,7 @@ app.get('/',function(request,res){
 
 app.post('/',function(request,res){
   const query = request.body.Cityname;
-  const url = "https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid=a0356f20ac064123348059107ca58cbc&units=metric";
+  const url = "https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid=xxxxxxxxxxxxxxxxxx&units=metric";
   https.get(url,function(response){
     console.log(response.statusCode);
     response.on("data",function(data){
